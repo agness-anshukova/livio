@@ -1,0 +1,28 @@
+
+.btn, a.btn {
+	display: inline-block;
+	background-color: #FFAE42;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	border-radius: 2px;
+	transition: opacity 0.2s ease;
+}
+
+.btn:hover, a.btn:hover {
+	opacity: 0.8;
+	color: #fff;
+}
+
+@media (max-width: 991px) {
+	.btn, a.btn {
+		height: 45px;
+		line-height: 45px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}

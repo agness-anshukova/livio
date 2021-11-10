@@ -1,0 +1,147 @@
+.how-it-works {
+	padding: 100px 0 100px;
+}	
+
+.how-it-works-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.how-it-works-header-head {
+	max-width: 584px;
+	margin-right: 136px;
+}
+
+.how-it-works-title {
+	margin-bottom: -3px;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.how-it-works-subtitle {
+	font-weight: 700;
+	font-size: 40px;
+	color: #FFAE42;
+}
+
+.how-it-works-header-content {
+	max-width: 671px;
+	line-height: 150%;
+	font-weight: 500;
+	padding-top: 58px;
+}
+
+.how-it-works-steps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 390px);
+	column-gap: 25px;
+}
+
+.step {
+	max-width: 350px;
+}
+
+.step:nth-child(2) {
+	padding-top: 287px;
+}
+
+.step:nth-child(3) {
+	padding-top: 54px;
+}
+
+.step-heading {
+	position: relative;
+	margin-bottom: 55px;
+	padding-top: 135px;
+	padding-left: 88px;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 150%;
+	color: #000;
+}
+
+.step-heading::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: attr(data-number);
+	color: #EEC37E;
+	font-weight: 400;
+	font-size: 150px;
+	line-height: 150%;
+	z-index: -1;
+}
+
+.step-text {
+	margin-bottom: 60px;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.step-img-wrapper {
+	position: relative;
+	background-color: #644215;
+	padding-bottom: 126%; /* 126% of width*/
+}
+
+.step-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+@media (max-width: 1249px) {
+
+	.how-it-works {
+		padding: 60px 0 60px;
+	}	
+
+	.how-it-works-header {
+		flex-direction: column;
+	}
+
+	.how-it-works-title {
+	    font-size: 20px;
+	}
+
+	.how-it-works-subtitle {
+	    font-size: 30px;
+	}
+
+	.how-it-works-header-content {
+	    padding-top: 25px;
+	}
+
+	.step:nth-child(2), .step:nth-child(3) {
+		padding-top: 0;
+	}	
+
+}
+
+@media (max-width: 419px) {
+	.how-it-works-steps {
+		grid-template-columns: 1fr;
+	}
+
+	.step-heading {
+	    padding-top: 50px;
+	    font-size: 30px;
+	    line-height: 100%;
+	    margin-bottom: 30px;
+	}
+
+	.step-heading::before {
+	    font-size: 80px;
+	    line-height: 180%;
+	}
+
+	.how-it-works-header {
+	    padding-bottom: 0;
+	}
+
+	.step-text {
+    	margin-bottom: 25px;
+	}
+}
